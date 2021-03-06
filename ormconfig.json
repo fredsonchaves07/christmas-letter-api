@@ -1,19 +1,18 @@
 {
+    "name": "default",
     "type": "postgres",
     "host": "localhost",
-    "port": 5432,
+    "port": "5432",
     "username": "postgres",
     "password": "postgres",
     "database": "christmasletterdb",
     "synchronize": true,
-    "logging": true,
+    "migrations": ["./src/database/migrations/**.ts"],
     "entities": [
-       "src/models/**.ts"
-    ],
-    "migrations": [
-       "src/database/migrations/**.ts"
-    ],
+        "./src/entity/**.ts"
+     ],
+    "log": true,
     "cli": {
         "migrationsDir": "./src/database/migrations"
     }
- }
+}
