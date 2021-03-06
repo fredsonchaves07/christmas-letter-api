@@ -1,6 +1,6 @@
 import {MigrationInterface, QueryRunner, Table} from "typeorm";
 
-export class CreateLetter1615039959412 implements MigrationInterface {
+export class CreateLetter1615056053142 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
@@ -9,8 +9,10 @@ export class CreateLetter1615039959412 implements MigrationInterface {
                 columns: [
                     {
                         name: 'id',
-                        type: 'serial',
-                        isPrimary: true
+                        type: 'uuid',
+                        isPrimary: true,
+                        generationStrategy: 'uuid',
+                        default: 'uuid_generate_v4()',
                     },
                     {
                         name: 'sender',
@@ -30,6 +32,7 @@ export class CreateLetter1615039959412 implements MigrationInterface {
                 ]
             })
         )
+        
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {

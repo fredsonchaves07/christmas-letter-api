@@ -1,11 +1,11 @@
-import { Column, CreateDateColumn, Entity, PrimaryColumn, PrimaryGeneratedColumn } from "typeorm"
-import { v4 as uuid } from 'uuid'
+import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from "typeorm"
+
 
 @Entity('letters')
 class Letter{
 
-    @PrimaryGeneratedColumn()
-    id: number
+    @PrimaryGeneratedColumn("uuid")
+    id: string
 
     @Column()
     sender: string
@@ -15,6 +15,7 @@ class Letter{
 
     @CreateDateColumn()
     created_at: Date
+
 
 }
 

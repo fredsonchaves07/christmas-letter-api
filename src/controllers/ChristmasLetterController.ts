@@ -44,7 +44,7 @@ class ChistmasLetterController {
     
             return response.status(201).json(letter)
         } catch (exception) {
-            console.log(`Error: ${exception.message}`)
+            console.log(`Error: ${exception.stack}`)
         }
     }
 }
