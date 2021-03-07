@@ -1,19 +1,23 @@
 <h1 align="center">
     🎅 🎁 🎄 Chistmas Letter API
 </h1>
-<!--
-<p align="center">
-  <a href="#🎅-test">Test</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#computer-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#warning-requisitos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#card_index_dividers-como-acessar">Como acessar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#postbox-perguntas-e-respostas">Perguntas e Respostas</a>
-</p>
--->
 
 ## 📌 Content
+
 - [About](#🚀-about)
+- [Technology](#💻-technology)
+- [Installation and Configuration](#🛠️-installation-and-configuration)
+   - [Database](#database)
+   - [Installation of Depedences](#installation-of-depedences)
+   - [Migrations](#migrations)
+   - [Tests](#tests)
+- [Running the API](#⚙️-running-the-api)
+- [Build](#🏭-build)
+- [Endpoint structure](#🌎-endpoint-structure)
+   - [GET](#GET)
+   - [POST](#POST) 
+- [Issues](#🐛-issues)
+- [Contribution](#🤝-contribution)
 
 ## 🚀 About
 
