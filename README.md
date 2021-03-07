@@ -135,11 +135,11 @@ Request body example
 
 ## 🐛 Issues
 
-I would love to review your pull request! Open a new issue
+I would love to review your pull request! Open a new [issue](https://github.com/fredsonchaves07/christmas-letter-api/issues)
 
 ## 🤝 Contribution
 
-Feel free to contribute to the project. I am open for suggestions. Click here to open a new issue smile
+Feel free to contribute to the project. I am open for suggestions. Click [here](https://github.com/fredsonchaves07/christmas-letter-api/issues) to open a new issue :smile:
 
 
 ---
