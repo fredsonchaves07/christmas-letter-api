@@ -117,6 +117,7 @@ The endpoint `letter` is structured in the `GET` and `POST` methods
 ### GET
 
 - [`http://18.228.10.190:5000/letter`](http://18.228.10.190:5000/letter)
+
 After the request, it should be returned in json format as an example
 ```json
 [
