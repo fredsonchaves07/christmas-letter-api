@@ -10,7 +10,7 @@ class ChistmasLetterController {
 
             const listLetter = await christmasLetterRepository.find()
 
-            if(!listLetter){
+            if(listLetter.length == 0){
                 return response.status(404).json({
                     'message': 'error 404! data not found!'
                 })
