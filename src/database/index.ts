@@ -7,7 +7,7 @@ export default async(): Promise <Connection> => {
 
         const defaultOptions = await getConnectionOptions();
     
-        return createConnection(
+        return await createConnection(
             Object.assign(defaultOptions, {
                 type: conection === 'test' ? "sqlite" : defaultOptions.type,
                 database: conection === 'test' ? "./src/database/database.sqlite": defaultOptions.database,
