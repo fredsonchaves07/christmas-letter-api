@@ -3,7 +3,7 @@
         "name": "default",
         "type": "postgres",
         "host": "localhost",
-        "username": "postgres",
+        "username": "ubuntu",
         "password": "postgres",
         "database": "christmasletterdb",
         "migrations": [
