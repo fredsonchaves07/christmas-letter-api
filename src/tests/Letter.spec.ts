@@ -3,7 +3,6 @@ import { getConnection } from 'typeorm'
 import { app } from '../app'
 import createConnection from '../database'
 
-
 describe('Letter', () => {
     beforeAll(async () => {
         await (await createConnection()).runMigrations()
@@ -38,3 +37,4 @@ describe('Letter', () => {
         expect(response.status).toBe(200)
     })
 })
+
