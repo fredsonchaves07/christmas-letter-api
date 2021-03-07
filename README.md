@@ -8,7 +8,7 @@
 - [Technology](#-technology)
 - [Installation and Configuration](#-installation-and-configuration)
    - [Database](#database)
-   - [Installation of Depedences](#installation-of-depedences)
+   - [Installation of Dependencies](#installation-of-dependencies)
    - [Migrations](#migrations)
    - [Tests](#tests)
 - [Running the API](#-running-the-api)
