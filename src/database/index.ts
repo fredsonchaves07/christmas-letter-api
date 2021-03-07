@@ -14,6 +14,9 @@ export default async(): Promise <Connection> => {
                 entities: [
                     Letter
                 ],
+                migrations: [
+                    __dirname + "/migrations/**"
+                ]
             })
         )
     } catch (exception) {

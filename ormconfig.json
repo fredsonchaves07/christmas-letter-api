@@ -7,10 +7,10 @@
         "password": "postgres",
         "database": "christmasletterdb",
         "migrations": [
-            "**/database/migrations/**.js"
+            ".**/database/migrations/**.ts"
         ],
         "entities": [
-            "**/entity/**.js"
+            ".**/entity/**.ts"
         ],
         "cli": {
             "migrationsDir": "**/database/migrations"
