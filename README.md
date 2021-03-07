@@ -64,7 +64,7 @@ Required has the most up-to-date version of [postgres](https://www.postgresql.or
 ]
 ```
 
-### Installation of Depedences
+### Installation of Dependencies
 
 Run the command to perform the dependency installation
 
@@ -116,9 +116,19 @@ The endpoint `letter` is structured in the `GET` and `POST` methods
 
 ### GET
 
----
-
 - [`http://18.228.10.190:5000/letter`](http://18.228.10.190:5000/letter)
+After the request, it should be returned in json format as an example
+```json
+[
+    {
+        "id": "string",
+        "sender": "string",
+        "message": "string",
+        "created_at": "string"
+    }
+]
+```
+
 
 ### POST
 
@@ -130,6 +140,15 @@ Request body example
 {
     "sender": "string",
     "message": "string"
+}
+```
+After the request, it should be returned in json format as an example
+```json
+{
+    "id": "string",
+    "sender": "string",
+    "message": "string",
+    "created_at": "string"
 }
 ```
 
