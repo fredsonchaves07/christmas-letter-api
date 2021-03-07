@@ -4,20 +4,20 @@
 
 ## 📌 Content
 
-- [About](#🚀-about)
-- [Technology](#💻-technology)
-- [Installation and Configuration](#🛠️-installation-and-configuration)
+- [About](#-about)
+- [Technology](#-technology)
+- [Installation and Configuration](#-installation-and-configuration)
    - [Database](#database)
    - [Installation of Depedences](#installation-of-depedences)
    - [Migrations](#migrations)
    - [Tests](#tests)
-- [Running the API](#⚙️-running-the-api)
-- [Build](#🏭-build)
-- [Endpoint structure](#🌎-endpoint-structure)
+- [Running the API](#-running-the-api)
+- [Build](#-build)
+- [Endpoint structure](#-endpoint-structure)
    - [GET](#GET)
    - [POST](#POST) 
-- [Issues](#🐛-issues)
-- [Contribution](#🤝-contribution)
+- [Issues](#-issues)
+- [Contribution](#-contribution)
 
 ## 🚀 About
 
