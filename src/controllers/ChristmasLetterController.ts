@@ -19,6 +19,9 @@ class ChistmasLetterController {
             return response.status(200).json(listLetter)
         } catch (exception) {
             console.log(`Error: ${exception.message}`)
+            return response.status(500).json({
+                'error': 'Internal Server error!'
+            })
         }
         
     }
@@ -44,7 +47,10 @@ class ChistmasLetterController {
     
             return response.status(201).json(letter)
         } catch (exception) {
-            console.log(`Error: ${exception.stack}`)
+            console.log(`Error: ${exception.message}`)
+            return response.status(500).json({
+                'error': 'Internal Server error!'
+            })
         }
     }
 }

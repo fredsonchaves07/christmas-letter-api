@@ -2,17 +2,22 @@ import { Connection, createConnection, getConnectionManager, getConnectionOption
 import { Letter } from '../entity/Letter';
 
 export default async(): Promise <Connection> => {
-    const conection = process.env.NODE_ENV
+    try {
+        const conection = process.env.NODE_ENV
 
-    const defaultOptions = await getConnectionOptions();
+        const defaultOptions = await getConnectionOptions();
     
-    return createConnection(
-        Object.assign(defaultOptions, {
-            type: conection === 'test' ? "sqlite" : defaultOptions.type,
-            database: conection === 'test' ? "./src/database/database.sqlite": defaultOptions.database,
-            entities: [
-                Letter
-            ],
-        })
-    )
+        return createConnection(
+            Object.assign(defaultOptions, {
+                type: conection === 'test' ? "sqlite" : defaultOptions.type,
+                database: conection === 'test' ? "./src/database/database.sqlite": defaultOptions.database,
+                entities: [
+                    Letter
+                ],
+            })
+        )
+    } catch (exception) {
+        console.log(`Error: ${exception.message}`)
+    } 
+    
 }
