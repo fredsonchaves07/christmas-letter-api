@@ -1,4 +1,4 @@
-import { Column, CreateDateColumn, Entity, PrimaryGeneratedColumn } from "typeorm"
+import { Column,CreateDateColumn,Entity,PrimaryGeneratedColumn } from "typeorm"
 
 
 @Entity('letters')
@@ -7,15 +7,14 @@ class Letter{
     @PrimaryGeneratedColumn("uuid")
     id: string
 
-    @Column()
+    @Column("varchar")
     sender: string
 
-    @Column()
+    @Column("varchar")
     message: string
 
     @CreateDateColumn()
     created_at: Date
-
 
 }
 

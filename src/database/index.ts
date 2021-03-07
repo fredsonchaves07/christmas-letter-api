@@ -1,4 +1,5 @@
-import {Connection, createConnection, getConnectionManager, getConnectionOptions} from 'typeorm'
+import { Connection, createConnection, getConnectionManager, getConnectionOptions } from 'typeorm'
+import { Letter } from '../entity/Letter';
 
 export default async(): Promise <Connection> => {
     const conection = process.env.NODE_ENV
@@ -9,6 +10,9 @@ export default async(): Promise <Connection> => {
         Object.assign(defaultOptions, {
             type: conection === 'test' ? "sqlite" : defaultOptions.type,
             database: conection === 'test' ? "./src/database/database.sqlite": defaultOptions.database,
+            entities: [
+                Letter
+            ],
         })
     )
 }

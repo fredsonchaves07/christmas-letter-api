@@ -6,12 +6,14 @@
         "username": "postgres",
         "password": "postgres",
         "database": "christmasletterdb",
-        "migrations": ["./src/database/migrations/**.ts"],
+        "migrations": [
+            "**/database/migrations/**.js"
+        ],
         "entities": [
-            "./src/entity/**.ts"
+            "**/entity/**.js"
         ],
         "cli": {
-            "migrationsDir": "./src/database/migrations"
+            "migrationsDir": "**/database/migrations"
         }
     }
 ]
